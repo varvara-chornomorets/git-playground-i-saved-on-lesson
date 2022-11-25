@@ -47,6 +47,10 @@ while not is_game_over():
     if not guess_is_valid(guess):
         continue
 
+    if guess in guesses:
+        print("You cannot type in the same word twice")
+        continue
+
     if guess in full_list:
         guessed += 1
         guesses.append(guess)
