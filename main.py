@@ -44,6 +44,8 @@ word = words[random.randrange(0, len(words))]
 
 print(f"Can you make up {WORDS_TO_WIN} words from letters in word provided by me?")
 print(f"Your word is '{word}'")
+name = input("btw may i ask your name, you are so pretty! ")
+print("What a beautiful name. But let's not get sidetracked")
 
 
 while not is_game_over():
