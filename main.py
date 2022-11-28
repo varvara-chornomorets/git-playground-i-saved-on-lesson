@@ -68,3 +68,5 @@ while not is_game_over():
         print(f"Oops :( No such word, you have {ERRORS_TO_LOSE - errors} lives more")
         if errors == ERRORS_TO_LOSE:
             blame_user()
+        if ERRORS_TO_LOSE - errors == 1:
+            print("You have nearly died")
